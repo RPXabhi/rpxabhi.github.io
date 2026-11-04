@@ -4,83 +4,231 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Official website of RPXabhi Developer. Discover Android apps, privacy policies and developer information.">
+
+<meta name="description" content="Official website of RPXabhi Developer. Explore Android apps, app updates, privacy policies and developer support.">
+
 <title>RPXabhi Developer | Official Website</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{
- font-family:Arial,sans-serif;
- background:#0b1020;
- color:#f1f5f9;
- line-height:1.7;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header{
- padding:20px 8%;
- display:flex;
- justify-content:space-between;
- align-items:center;
- flex-wrap:wrap;
- gap:15px;
- background:#111a30;
- border-bottom:1px solid #26334d;
+
+html {
+    scroll-behavior: smooth;
 }
-.logo{font-size:23px;font-weight:bold;color:#60a5fa}
-nav a{
- color:#e2e8f0;
- text-decoration:none;
- margin-left:20px;
- font-size:14px;
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: #f1f5f9;
+    line-height: 1.7;
 }
-nav a:hover{color:#60a5fa}
-.hero{
- padding:95px 20px;
- text-align:center;
- background:linear-gradient(135deg,#111a30,#172b50);
+
+header {
+    background: #111c32;
+    padding: 20px 8%;
+    border-bottom: 1px solid #263650;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
-.hero h1{font-size:42px;margin-bottom:12px}
-.hero h1 span{color:#60a5fa}
-.hero p{color:#cbd5e1;max-width:650px;margin:12px auto}
-.btn{
- display:inline-block;
- margin-top:22px;
- padding:12px 25px;
- background:#2563eb;
- color:white;
- border-radius:8px;
- text-decoration:none;
- font-weight:bold;
+
+.logo {
+    color: #60a5fa;
+    font-size: 24px;
+    font-weight: bold;
 }
-section{padding:65px 8%;text-align:center}
-.section-title{font-size:30px;margin-bottom:12px}
-.sub{color:#94a3b8;margin-bottom:30px}
-.card{
- background:#151f35;
- border:1px solid #293752;
- border-radius:14px;
- padding:28px;
- max-width:650px;
- margin:20px auto;
- text-align:left;
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
 }
-.card h3{color:#60a5fa;margin-bottom:10px}
-.card p{color:#cbd5e1}
-.info{color:#cbd5e1;max-width:750px;margin:auto}
-footer{
- text-align:center;
- padding:25px;
- background:#111a30;
- color:#94a3b8;
- border-top:1px solid #26334d;
- font-size:14px;
+
+nav a {
+    color: #dbeafe;
+    text-decoration: none;
+    font-weight: 600;
 }
-footer a{color:#60a5fa;text-decoration:none}
-@media(max-width:600px){
- header{justify-content:center}
- nav{text-align:center}
- nav a{margin:0 7px;font-size:13px}
- .hero h1{font-size:32px}
- section{padding:50px 6%}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: #111c32;
+    border-bottom: 1px solid #263650;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #60a5fa;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #2563eb;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+section {
+    padding: 65px 8%;
+}
+
+.section-title {
+    font-size: 30px;
+    color: #60a5fa;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    color: #cbd5e1;
+    max-width: 850px;
+}
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.app-card {
+    background: #15233d;
+    border: 1px solid #2b3e5c;
+    border-radius: 14px;
+    padding: 25px;
+    transition: 0.2s;
+}
+
+.app-card:hover {
+    border-color: #60a5fa;
+    transform: translateY(-3px);
+}
+
+.app-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 14px;
+    background: #203657;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #60a5fa;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.app-card h3 {
+    color: #f1f5f9;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.app-card p {
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.app-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 18px;
+}
+
+.app-links a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.app-links a:hover {
+    text-decoration: underline;
+}
+
+.coming-soon {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.contact-box {
+    background: #15233d;
+    border: 1px solid #2b3e5c;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 650px;
+}
+
+.contact-box a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 28px 15px;
+    background: #080d18;
+    border-top: 1px solid #263650;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 65px 18px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 48px 6%;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
 }
 </style>
 </head>
@@ -88,61 +236,120 @@ footer a{color:#60a5fa;text-decoration:none}
 <body>
 
 <header>
- <div class="logo">RPXabhi Developer</div>
- <nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#apps">Apps</a>
-  <a href="#contact">Contact</a>
- </nav>
+    <div class="logo">RPXabhi Developer</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#apps">Apps</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<div class="hero" id="home">
- <h1>Welcome to <span>RPXabhi</span></h1>
- <p>Building useful, simple and innovative Android applications to make everyday digital experiences better.</p>
- <a href="#apps" class="btn">Explore My Apps</a>
-</div>
+<main>
+
+<section class="hero" id="home">
+    <h1>Welcome to RPXabhi</h1>
+
+    <p>
+        Building useful, simple and innovative Android
+        applications to make everyday digital experiences better.
+    </p>
+
+    <a href="#apps" class="btn">Explore My Apps</a>
+</section>
 
 <section id="about">
- <h2 class="section-title">About Developer</h2>
- <p class="info">
- Welcome to the official website of RPXabhi Developer.
- This website is the home of my Android applications,
- app updates, privacy policies and developer information.
- My goal is to create useful and user-friendly digital experiences.
- </p>
+    <h2 class="section-title">About Developer</h2>
+
+    <p class="section-text">
+        Welcome to the official website of RPXabhi Developer.
+        This website is the home of my Android applications,
+        app updates, privacy policies and developer information.
+
+        My goal is to create useful, reliable and user-friendly
+        digital experiences.
+    </p>
 </section>
 
 <section id="apps">
- <h2 class="section-title">My Android Apps</h2>
- <p class="sub">Explore applications developed by RPXabhi.</p>
+    <h2 class="section-title">My Android Apps</h2>
 
- <div class="card">
-  <h3>CG Quizz Master</h3>
-  <p>
-   An Android quiz application focused on Chhattisgarh
-   general knowledge and learning.
-  </p>
-  <p style="margin-top:12px;color:#60a5fa">
-   Google Play link coming soon.
-  </p>
- </div>
+    <p class="section-text">
+        Explore Android applications developed by RPXabhi.
+    </p>
+
+    <div class="apps-grid">
+
+        <!-- App 1 -->
+        <div class="app-card">
+            <div class="app-icon">❓</div>
+
+            <h3>CG QUIZZ MASTER 2.O</h3>
+
+            <p>
+                An educational Android quiz and practice app
+                focused on Chhattisgarh General Knowledge,
+                learning and exam preparation.
+            </p>
+
+            <div class="app-links">
+                <a href="cg-quizz-master-privacy-policy.html">
+                    Privacy Policy
+                </a>
+            </div>
+
+            <p class="coming-soon">
+                Google Play link coming soon.
+            </p>
+        </div>
+
+        <!-- Future App 2 -->
+        <div class="app-card">
+            <div class="app-icon">📱</div>
+
+            <h3>Coming Soon</h3>
+
+            <p>
+                More useful Android applications are coming soon.
+                Stay connected with RPXabhi Developer.
+            </p>
+
+            <p class="coming-soon">
+                New app announcement coming soon.
+            </p>
+        </div>
+
+    </div>
 </section>
 
 <section id="contact">
- <h2 class="section-title">Contact Developer</h2>
- <p class="info">
- For app-related questions, feedback or support,
- please contact the developer through the email
- provided on the Google Play Store listing.
- </p>
+    <h2 class="section-title">Contact Developer</h2>
+
+    <div class="contact-box">
+        <p>
+            For app-related questions, feedback or support,
+            please contact the developer:
+        </p>
+
+        <p style="margin-top:15px;">
+            Email:
+            <a href="mailto:abhishori85@gmail.com">
+                abhishori85@gmail.com
+            </a>
+        </p>
+
+        <p style="margin-top:10px;">
+            Developer: RPXabhi Developer
+        </p>
+    </div>
 </section>
 
+</main>
+
 <footer>
- <p>© 2026 RPXabhi Developer. All Rights Reserved.</p>
- <p style="margin-top:8px">
-  Official Developer Website
- </p>
+    <p>© 2026 RPXabhi Developer. All Rights Reserved.</p>
+    <p>Official Developer Website</p>
 </footer>
 
 </body>
